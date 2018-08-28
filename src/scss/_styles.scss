@@ -3,3 +3,11 @@
   top: -56px;
   z-index: -10;
 }
+
+.site-about {
+  background: url("../img/about-bg.jpg") no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  position: relative;
+}
