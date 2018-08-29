@@ -9,7 +9,7 @@
 
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
     <link href="https://unpkg.com/ionicons@4.4.1/dist/css/ionicons.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.min.css">
@@ -94,48 +94,60 @@
             </div>
             <div class="row">
                 <div class="col-12 col-md-4 col-sm-6">
-                    <i class="icon ion-iphone"></i>
-                    <h3 class="text-uppercase">fully responsive</h3>
+                    <div class="row">
+                        <i class="ion ion-md-phone-portrait p-3"></i>
+                        <h3 class="text-uppercase m-0">fully responsive</h3>
+                    </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                         quis nostrud exercitation. </p>
                 </div>
 
                 <div class="col-12 col-md-4 col-sm-6">
-                    <i class="icon ion-ios-infinite-outline"></i>
-                    <h3 class="text-uppercase">unlimited options</h3>
+                    <div class="row">
+                        <i class="ion ion-md-infinite p-3"></i>
+                        <h3 class="text-uppercase m-0">unlimited options</h3>
+                    </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                         quis nostrud exercitation. </p>
                 </div>
 
                 <div class="col-12 col-md-4 col-sm-6">
-                    <i class="icon ion-social-wordpress-outline"></i>
-                    <h3 class="text-uppercase">wordpress</h3>
+                    <div class="row">
+                        <i class="ion ion-logo-wordpress p-3"></i>
+                        <h3 class="text-uppercase m-0">wordpress</h3>
+                    </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                         quis nostrud exercitation. </p>
                 </div>
 
                 <div class="col-12 col-md-4 col-sm-6">
-                    <i class="icon ion-ios-cart-outline"></i>
-                    <h3 class="text-uppercase">e-commerce</h3>
+                    <div class="row">
+                        <i class="ion ion-md-cart p-3"></i>
+                        <h3 class="text-uppercase m-0">e-commerce</h3>
+                    </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                         quis nostrud exercitation. </p>
                 </div>
 
                 <div class="col-12 col-md-4 col-sm-6">
-                    <i class="icon ion-ios-setting"></i>
-                    <h3 class="text-uppercase">customizable design</h3>
+                    <div class="row">
+                        <i class="ion ion-md-options p-3"></i>
+                        <h3 class="text-uppercase m-0">customizable design</h3>
+                    </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                         quis nostrud exercitation. </p>
                 </div>
 
                 <div class="col-12 col-md-4 col-sm-6">
-                    <i class="icon ion-settings"></i>
-                    <h3 class="text-uppercase">support</h3>
+                    <div class="row">
+                        <i class="ion ion-md-construct p-3"></i>
+                        <h3 class="text-uppercase m-0">support</h3>
+                    </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                         quis nostrud exercitation. </p>
@@ -195,40 +207,55 @@
             <div class="row">
                 <div class="col">
                     <div class="row">
-                        <div class="col-6 text-center">
-                            <ul class="slides list-unstyled">
-                                <li>
-                                    <div class="author__pic">
-                                        <img src="img/Layer-13.jpg" alt="">
-                                    </div>
+                        <div class="col-6 text-center carousel slide" id="carouselExampleIndicators"
+                             data-ride="carousel" data-interval="false">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <ul class="slides list-unstyled carousel-inner">
+                                <li class="carousel-item active">
+
+                                    <img class="img-fluid rounded-circle" src="img/Layer-13.jpg" alt="First slide">
+
+                                    <!--<div class="carousel-caption d-none d-md-block">-->
                                     <p>
-                                        Quisque iaculis lorem vestibulum eros vehicula, non congue elit dictum. Donec
+                                        Quisque iaculis lorem vestibulum eros vehicula, non congue elit dictum.
+                                        Donec
                                         mollis aliquet lorem, eu porttitor sapien semper in. Duis ac erat luctus,
                                         gravida lectus sit amet, consectetur orci. Suspendisse libero mauris.
                                     </p>
                                     <div class="author__name">john doe</div>
+                                    <!--</div>-->
                                 </li>
-                                <li>
-                                    <div class="author__pic">
-                                        <img src="img/Layer-13.jpg" alt="">
-                                    </div>
+                                <li class="carousel-item">
+
+                                    <img class="img-fluid rounded-circle" src="img/Layer-13.jpg" alt="Second slide">
+
+                                    <!--<div class="carousel-caption d-none d-md-block">-->
                                     <p>
-                                        Quisque iaculis lorem vestibulum eros vehicula, non congue elit dictum. Donec
+                                        Quisque iaculis lorem vestibulum eros vehicula, non congue elit dictum.
+                                        Donec
                                         mollis aliquet lorem, eu porttitor sapien semper in. Duis ac erat luctus,
                                         gravida lectus sit amet, consectetur orci. Suspendisse libero mauris.
                                     </p>
                                     <div class="author__name">john doe</div>
+                                    <!--</div>-->
                                 </li>
-                                <li>
-                                    <div class="author__pic">
-                                        <img src="img/Layer-13.jpg" alt="">
-                                    </div>
+                                <li class="carousel-item">
+
+                                    <img class="img-fluid rounded-circle" src="img/Layer-13.jpg" alt="Third slide">
+
+                                    <!--<div class="carousel-caption d-none d-md-block">-->
                                     <p>
-                                        Quisque iaculis lorem vestibulum eros vehicula, non congue elit dictum. Donec
+                                        Quisque iaculis lorem vestibulum eros vehicula, non congue elit dictum.
+                                        Donec
                                         mollis aliquet lorem, eu porttitor sapien semper in. Duis ac erat luctus,
                                         gravida lectus sit amet, consectetur orci. Suspendisse libero mauris.
                                     </p>
                                     <div class="author__name">john doe</div>
+                                    <!--</div>-->
                                 </li>
                             </ul>
                         </div>
