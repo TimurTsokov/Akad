@@ -1,7 +1,7 @@
 //= ./util.js
 /// = ./alert.js
 /// = ./button.js
-/// = ./carousel.js
+//= ./carousel.js
 //= ./collapse.js
 //= ./dropdown.js
 /// = ./tab.js
