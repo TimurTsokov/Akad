@@ -9,8 +9,8 @@ $(document).ready(function () {
         }
     });
     $('.switchers a').on('click', function (e) {
-        $('.switchers li').removeClass('active');
-        $(this).parent().addClass('active');
+        $('.switchers li').removeClass('switcher__active');
+        $(this).parent().addClass('switcher__active');
         e.preventDefault();
         var filter = $(this).attr('data-filter');
         filter = filter == '*' ? filter : '.' + filter;

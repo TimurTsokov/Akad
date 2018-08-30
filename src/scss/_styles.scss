@@ -1,7 +1,17 @@
-.opacity {
+//.opacity {
+//  opacity: 0.15;
+//  top: -56px;
+//  z-index: -10;
+//}
+.background-img {
+  background: url("../img/Layer-1.jpg") no-repeat;
+  background-size: cover;
+  height: 850px;
+  width: 100%;
+  position: absolute;
+  margin-top: -56px;
+  z-index: -1;
   opacity: 0.15;
-  top: -56px;
-  z-index: -10;
 }
 
 .site-about {
@@ -10,10 +20,68 @@
   height: 500px;
   width: 100%;
   position: relative;
+  margin-top: -56px;
+  z-index: -1;
 }
 
-.ion {
+.ion__about {
   background-color: #7beec7;
   font-size: 2rem;
+  color: #ffffff;
+}
+
+.ion__choose {
+  font-size: 3.5rem;
+  color: #60606e;
+}
+
+.text__before {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 65px;
+    height: 20px;
+    background-color: #7beec7;
+    z-index: -1;
+    bottom: -5px;
+  }
+}
+
+.text__creative {
+  position: relative;
+  border: 10px solid #60606e;
+  &:before {
+    content: 'WE`RE';
+    font-size: 1.8rem;
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background-color: #7beec7;
+    top: -40px;
+    bottom: 0;
+    right: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+  }
+}
+
+.no-underline {
+  padding: 5px 20px;
+  margin-left: 10px;
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none !important;
+    background-color: #7beec7;
+    margin-left: 0;
+    color: #ffffff;
+  }
+}
+
+.switcher__active a {
+  background-color: #7beec7;
+  margin-left: 0;
   color: #ffffff;
 }

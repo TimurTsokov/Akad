@@ -14,7 +14,7 @@
 
 	<link rel="stylesheet" href="css/styles.min.css">
 </head>
-<!--<link rel="stylesheet" href="../build/css/styles.min.css">-->
+<link rel="stylesheet" href="../build/css/styles.min.css">
 <body>
 <nav class="navbar navbar-expand-lg navbar-light text-uppercase">
     <a class="navbar-brand" href="#">akad.</a>
@@ -45,20 +45,17 @@
         </ul>
     </div>
 </nav>
+
+<div class="background-img"></div>
+
 <main>
-    <section>
-        <div class="row position-absolute opacity">
-            <div class="col">
-                <img class="img-fluid" src="img/Layer-1.jpg" alt="">
-            </div>
-        </div>
-    </section>
-	<div class="container">
+    <div class="container">
         <section>
             <div class="row justify-content-center">
                 <div class="col-md-6 text-center">
-                    <h1 class="text-uppercase">creative agency</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h1 class="text-uppercase text__creative">creative agency</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
                 </div>
             </div>
             <div class="row">
@@ -66,8 +63,11 @@
                     <img class="img-fluid w-100" src="img/Layer-4.jpg" alt="">
                 </div>
                 <div class="col-lg-6 offset-lg-1">
-                    <h2 class="text-uppercase">HISTORY OF AGENCY</h2>
-                    <p>Porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi modi tempora incidunt ut labore.</p>
+                    <h2 class="text-uppercase text__before">HISTORY OF AGENCY</h2>
+                    <p>Porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
+                        non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut
+                        enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
+                        aliquid ex ea commodi modi tempora incidunt ut labore.</p>
                     <a href="#" class="btn btn-primary offset-lg-8 text-uppercase">read more</a>
                 </div>
             </div>
@@ -75,8 +75,9 @@
         <section>
             <div class="row justify-content-center">
                 <div class="col-md-8 text-center">
-                    <h2 class="text-uppercase">Why choose us</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt officia possimus tempore. In nobis nostrum perspiciatis quaerat quod repudiandae ut.</p>
+                    <h2 class="text-uppercase text__before">Why choose us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt officia possimus tempore. In
+                        nobis nostrum perspiciatis quaerat quod repudiandae ut.</p>
                 </div>
             </div>
             <div class="row">
@@ -86,6 +87,7 @@
                 <div class="col-lg-6 order-lg-first">
                     <div class="row text-uppercase">
                         <div class="col-md-6 text-center text-md-left">
+                            <i class="ion ion-md-infinite ion__choose"></i>
                             <h3>unlimited options</h3>
                             <ul class="list-unstyled">
                                 <li>Branding</li>
@@ -95,6 +97,7 @@
                             </ul>
                         </div>
                         <div class="col-md-6 text-center text-md-left">
+                            <i class="ion ion-md-shuffle ion__choose"></i>
                             <h3>DESIGN & DEVELOPMENT</h3>
                             <ul class="list-unstyled">
                                 <li>Information architecture</li>
@@ -104,6 +107,7 @@
                             </ul>
                         </div>
                         <div class="col-md-6 text-center text-md-left">
+                            <i class="ion ion-md-cart ion__choose"></i>
                             <h3>e-commerce</h3>
                             <ul class="list-unstyled">
                                 <li>Prototyping</li>
@@ -113,6 +117,7 @@
                             </ul>
                         </div>
                         <div class="col-md-6 text-center text-md-left">
+                            <i class="ion ion-md-options ion__choose"></i>
                             <h3> CUSTOMIZABLE DESIGN</h3>
                             <ul class="list-unstyled">
                                 <li>Information architecture</li>
@@ -128,20 +133,21 @@
         <section>
             <div class="row justify-content-center">
                 <div class="col-md-8 text-center">
-                    <h2 class="text-uppercase">Our portfolio</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt officia possimus tempore. In nobis nostrum perspiciatis quaerat quod repudiandae ut.</p>
+                    <h2 class="text-uppercase text__before">Our portfolio</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt officia possimus tempore. In
+                        nobis nostrum perspiciatis quaerat quod repudiandae ut.</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-3">
                     <h2 class="text-uppercase">choose category</h2>
                     <ul class="list-unstyled text-uppercase switchers">
-                        <li><a href="#" data-filter="*">all</a></li>
-                        <li><a href="#" data-filter="webdesign">webdesign</a></li>
-                        <li><a href="#" data-filter="graphicdesign">graphic design</a></li>
-                        <li><a href="#" data-filter="fashion">fashion</a></li>
-                        <li><a href="#" data-filter="logodesign">logo design</a></li>
-                        <li><a href="#" data-filter="advertising">advertising</a></li>
+                        <li class="switcher__active"><a class="no-underline" href="#" data-filter="*">all</a></li>
+                        <li><a class="no-underline" href="#" data-filter="webdesign">webdesign</a></li>
+                        <li><a class="no-underline" href="#" data-filter="graphicdesign">graphic design</a></li>
+                        <li><a class="no-underline" href="#" data-filter="fashion">fashion</a></li>
+                        <li><a class="no-underline" href="#" data-filter="logodesign">logo design</a></li>
+                        <li><a class="no-underline" href="#" data-filter="advertising">advertising</a></li>
                     </ul>
                 </div>
                 <div class="col-md-9">
@@ -183,15 +189,15 @@
 
 
 <footer>
-    <section class="subsribe">
+    <section class="subsribe" style="background-color:#7beec7;">
         <div class="container">
-            <div class="row">
+            <div class="row py-5">
                 <div class="col-lg-6">
                     <h2 class="text-uppercase">YOU THINK WE'RE COOL ? LET'S WORK TOGETHER</h2>
                     <a href="#" class="btn btn-secondary">get in touch</a>
                 </div>
                 <div class="col-lg-6">
-                    <form action="">
+                    <form action="" style="background-color:#fff; padding: 20px 25px">
                         <h3 class="text-uppercase">STAY INFORMED WITH OUR NEWSLETTER</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur blanditiis cumque
                             dignissimos illum voluptas! Aliquam, architecto commodi distinctio explicabo facilis illo,
