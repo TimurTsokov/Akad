@@ -8,6 +8,10 @@ $(document).ready(function () {
             // gutter: 30
         }
     });
+    $('.navbar-nav a').on('click', function () {
+        $('.navbar-nav li').removeClass('active');
+        $(this).parent().addClass('active');
+    });
     $('.switchers a').on('click', function (e) {
         $('.switchers li').removeClass('switcher__active');
         $(this).parent().addClass('switcher__active');

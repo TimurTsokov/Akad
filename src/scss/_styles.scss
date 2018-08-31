@@ -85,3 +85,17 @@
   margin-left: 0;
   color: #ffffff;
 }
+
+.dashed {
+  position: relative;
+  &:after:not(:last-child) {
+    content: '';
+    width: 5px;
+    height: 2px;
+    position: absolute;
+    background-color: #cdcdcd;
+    right: -10px;
+    bottom: 10px;
+
+  }
+}
