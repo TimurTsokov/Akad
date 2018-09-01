@@ -24,3 +24,28 @@ $(document).ready(function () {
     });
     $('.carousel').carousel();
 });
+
+var map, marker, infoWindow, // Подключение карты
+    center = {
+        lat: 30.42854,
+        lng: -9.5989727
+    };
+
+function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: center,
+        zoom: 15
+    });
+
+    marker = new google.maps.Marker({
+        position: center,
+        map: map,
+        icon: 'img/marker.png'
+    });
+    infoWindow = new google.maps.InfoWindow({
+        content: '<h3>Agadir, Marocco</h3>'
+    });
+    marker.addListener('click', function () {
+        infoWindow.open(map, marker);
+    });
+}
