@@ -22,6 +22,10 @@ $(document).ready(function () {
             filter: filter
         })
     });
+    $('.pricing_plan').on('click', function () {
+        $('.pricing_plan').removeClass('pricing_plan-active');
+        $(this).addClass('pricing_plan-active');
+    });
     $('.carousel').carousel();
 });
 
