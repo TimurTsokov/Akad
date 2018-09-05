@@ -14,7 +14,7 @@
 
 	<link rel="stylesheet" href="css/styles.min.css">
 </head>
-<!--<link rel="stylesheet" href="../build/css/styles.min.css">-->
+<link rel="stylesheet" href="../build/css/styles.min.css">
 <body>
 <nav class="navbar navbar-expand-lg navbar-light text-uppercase">
     <a class="navbar-brand" href="#">akad.</a>
@@ -48,77 +48,112 @@
 
 <div class="site--bg">
     <div class="row text-uppercase h-100 align-items-center align-content-center">
-        <div class="col-12 text-center">Contact us</div>
+        <div class="col-12 text-center">blog posts</div>
         <div class="col-12 text-center">home / about</div>
     </div>
 </div>
 
 <main>
-    <section class="section my-7">
+    <section class="my-7">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
-                    <form class="mb-6">
-                        <div class="row mb-3">
-                            <div class="col">
-                                <input type="text" class="form-control" placeholder="Your name">
-                            </div>
-                            <div class="col">
-                                <input type="email" class="form-control" id="exampleFormControlInput1"
-                                       placeholder="Your email">
-                            </div>
+                <div class="col-md-8 col-sm-12">
+                    <div class="blog_post">
+                        <div class="post_media">
+                            <img class="img-fluid w-100" src="img/blog1.jpg" alt="post image">
                         </div>
-                        <div class="row mb-3">
-                            <div class="col">
-                                <input type="text" class="form-control" placeholder="Object">
-                            </div>
+                        <div class="post_info">
+                            <div class="post_date text-uppercase">october 13, 2015</div>
+                            <i class="ion ion-md-chatboxes"></i>
+                            <span>8</span>
+                            <i class="ion ion-md-heart"></i>
+                            <span>15</span>
                         </div>
-                        <div class="row mb-3">
-                            <div class="col">
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
-                                          placeholder="Message"></textarea>
-                            </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                        <div class="collapse" id="collapseExample">
+                            Adipisci architecto, atque distinctio dolore dolorem eius eos excepturi exercitationem
+                            explicabo fugiat id illo incidunt molestias officia officiis placeat, quas, quis quo quod
+                            repellendus unde voluptatem voluptatum? Accusantium consectetur dolore, eaque enim est
+                            eveniet hic mollitia neque, officia officiis perferendis, qui sed voluptatibus? Cumque,
+                            iste.
                         </div>
-                        <button type="submit" class="btn btn-primary">Send</button>
-                    </form>
-                    <div class="row">
-                        <div class="col col-sm-12">
-                            <h3 class="text-uppercase">Contact info</h3>
-                            <p>Lorem ipsum dolor sit amet, conse adipisicing elit. Libero incidunt quod ab mollitia quia
-                                dolorum conse.</p>
-                        </div>
-                        <div class="row ">
-                            <div class="col-lg-6 ml-3 mb-2">
-                                <span class="d-block">13D, Functional apartment, Unique colony, Agadir 86360 </span>
-                                <span class="d-block">+212 124-566-780</span>
-                                <span class="d-block">+212 124-566-780</span>
-                                <span class="d-block font-weight-bold">email@website.com</span>
-                                <ul class="list-unstyled">
-                                    <li class="list-inline-item"><a href="#"><i class="icon ion-logo-facebook"></i></a>
-                                    </li>
-                                    <li class="list-inline-item"><a href="#"><i class="icon ion-logo-twitter"></i></a>
-                                    </li>
-                                    <li class="list-inline-item"><a href="#"><i class="icon ion-logo-youtube"></i></a>
-                                    </li>
-                                    <li class="list-inline-item"><a href="#"><i class="icon ion-logo-linkedin"></i></a>
-                                    </li>
-                                    <li class="list-inline-item"><a href="#"><i class="icon ion-logo-pinterest"></i></a>
-                                    </li>
-                                    <li class="list-inline-item"><a href="#"><i class="icon ion-logo-instagram"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                        <a class="btn btn-primary text-uppercase" data-toggle="collapse" href="#collapseExample"
+                           role="button" aria-expanded="false" aria-controls="collapseExample">
+                            continue reading <i class="ion ion-md-arrow-forward"></i>
+                        </a>
 
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div id="map" class="z-depth-1" style="height: 100vh"></div>
+                <div class="col-md-3 offset-lg-1">
+                    <div class="input-group">
+                        <!--<input type="text" class="form-control" placeholder="your email"-->
+                        <!--aria-label="your email" aria-describedby="email">-->
+                        <input class="text-uppercase" type="search" aria-describedby="search" placeholder="search...">
+                        <div class="input-group-append">
+                            <button class="btn" type="button" id="search"><i class="ion ion-md-search"></i></button>
+                        </div>
+                    </div>
+
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                               aria-controls="home" aria-selected="true">Latest</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                               aria-controls="profile" aria-selected="false">Popular</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                               aria-controls="contact" aria-selected="false">Comments</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="row">
+                                <div class="col-lg-1">
+                                    <img class="img-fluid" src="img/blog2.jpg" alt="">
+                                </div>
+                                <div class="col-lg-7 offset-lg-3">
+                                    <div class="text-uppercase">Magna mollis ultricies</div>
+                                    <div>3th oct 2012</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-1">
+                                    <img class="img-fluid" src="img/blog3.jpg" alt="">
+                                </div>
+                                <div class="col-lg-7 offset-lg-3">
+                                    <div class="text-uppercase">Magna mollis ultricies</div>
+                                    <div>3th oct 2012</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-1">
+                                    <img class="img-fluid" src="img/blog4.jpg" alt="">
+                                </div>
+                                <div class="col-lg-7 offset-lg-3">
+                                    <div class="text-uppercase">Magna mollis ultricies</div>
+                                    <div>3th oct 2012</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla?
+                        </div>
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                            Lorem ipsum dolor.
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
 </main>
 
 
