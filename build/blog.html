@@ -16,48 +16,52 @@
 </head>
 <link rel="stylesheet" href="../build/css/styles.min.css">
 <body>
-<nav class="navbar navbar-expand-lg navbar-light text-uppercase">
-    <a class="navbar-brand" href="#">akad.</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="about.html">About us</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="services.html">Services</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="blog.html">Blog</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact us</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-
-<div class="site--bg">
-    <div class="row text-uppercase h-100 align-items-center align-content-center">
-        <div class="col-12 text-center">blog posts</div>
-        <div class="col-12 text-center">home / about</div>
-    </div>
+<div class="container container-navbar position-fixed">
+    <nav class="navbar navbar-expand-lg navbar-light text-uppercase">
+        <a class="navbar-brand" href="#">akad.</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 </div>
 
 <main>
+    <section class="site--bg">
+        <div class="container">
+            <div class="row justify-content-center text-uppercase align-items-center align-content-center site__title">
+                <div class="col-12 text-center title">blog posts</div>
+                <div class="col-12 text-center subtitle">home / about</div>
+            </div>
+        </div>
+    </section>
     <section class="my-7">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-sm-12">
+
+                <div class="col-md-8 col-sm-6">
                     <div class="blog_post">
                         <div class="post_media">
                             <img class="img-fluid w-100" src="img/blog1.jpg" alt="post image">
@@ -69,7 +73,7 @@
                             <i class="ion ion-md-heart"></i>
                             <span>15</span>
                         </div>
-                        <p>
+                        <p class="m-0">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
                             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
@@ -89,16 +93,15 @@
 
                     </div>
                 </div>
+
                 <div class="col-md-3 offset-lg-1">
                     <div class="input-group">
-                        <!--<input type="text" class="form-control" placeholder="your email"-->
-                        <!--aria-label="your email" aria-describedby="email">-->
                         <input class="text-uppercase" type="search" aria-describedby="search" placeholder="search...">
                         <div class="input-group-append">
                             <button class="btn" type="button" id="search"><i class="ion ion-md-search"></i></button>
                         </div>
                     </div>
-
+                    <h5 class="text-uppercase mt-5">Posts</h5>
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
@@ -144,13 +147,167 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla?
+                            <div class="row">
+                                <div class="col-lg-1">
+                                    <img class="img-fluid" src="img/blog3.jpg" alt="">
+                                </div>
+                                <div class="col-lg-7 offset-lg-3">
+                                    <div class="text-uppercase">Magna mollis ultricies</div>
+                                    <div>3th oct 2012</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-1">
+                                    <img class="img-fluid" src="img/blog2.jpg" alt="">
+                                </div>
+                                <div class="col-lg-7 offset-lg-3">
+                                    <div class="text-uppercase">Magna mollis ultricies</div>
+                                    <div>3th oct 2012</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-1">
+                                    <img class="img-fluid" src="img/blog4.jpg" alt="">
+                                </div>
+                                <div class="col-lg-7 offset-lg-3">
+                                    <div class="text-uppercase">Magna mollis ultricies</div>
+                                    <div>3th oct 2012</div>
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                            Lorem ipsum dolor.
+                            <div class="row">
+                                <div class="col-lg-1">
+                                    <img class="img-fluid" src="img/blog2.jpg" alt="">
+                                </div>
+                                <div class="col-lg-7 offset-lg-3">
+                                    <div class="text-uppercase">Magna mollis ultricies</div>
+                                    <div>3th oct 2012</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-1">
+                                    <img class="img-fluid" src="img/blog4.jpg" alt="">
+                                </div>
+                                <div class="col-lg-7 offset-lg-3">
+                                    <div class="text-uppercase">Magna mollis ultricies</div>
+                                    <div>3th oct 2012</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-1">
+                                    <img class="img-fluid" src="img/blog3.jpg" alt="">
+                                </div>
+                                <div class="col-lg-7 offset-lg-3">
+                                    <div class="text-uppercase">Magna mollis ultricies</div>
+                                    <div>3th oct 2012</div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
+                    <h5 class="text-uppercase mt-5">Categories</h5>
+                    <ul class="p-0 list-unstyled">
+                        <li class="d-flex justify-content-between border-bottom"><a href="#">Business</a><span>15</span>
+                        </li>
+                        <li class="d-flex justify-content-between border-bottom"><a
+                                href="#">Photography</a><span>17</span></li>
+                        <li class="d-flex justify-content-between border-bottom"><a href="#">Journal</a><span>22</span>
+                        </li>
+                        <li class="d-flex justify-content-between border-bottom"><a href="#">Web
+                            devlopment</a><span>30</span></li>
+                    </ul>
+
                 </div>
+                <div class="col-md-8 col-sm-6 my-6">
+                    <div class="blog_post">
+                        <div class="post_media">
+                            <img class="img-fluid w-100" src="img/blog1.jpg" alt="post image">
+                        </div>
+                        <div class="post_info">
+                            <div class="post_date text-uppercase">october 13, 2015</div>
+                            <i class="ion ion-md-chatboxes"></i>
+                            <span>8</span>
+                            <i class="ion ion-md-heart"></i>
+                            <span>15</span>
+                        </div>
+                        <p class="m-0">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                        <div class="collapse" id="collapseExample">
+                            Adipisci architecto, atque distinctio dolore dolorem eius eos excepturi exercitationem
+                            explicabo fugiat id illo incidunt molestias officia officiis placeat, quas, quis quo quod
+                            repellendus unde voluptatem voluptatum? Accusantium consectetur dolore, eaque enim est
+                            eveniet hic mollitia neque, officia officiis perferendis, qui sed voluptatibus? Cumque,
+                            iste.
+                        </div>
+                        <a class="btn btn-primary text-uppercase" data-toggle="collapse" href="#collapseExample"
+                           role="button" aria-expanded="false" aria-controls="collapseExample">
+                            continue reading <i class="ion ion-md-arrow-forward"></i>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-md-3 offset-lg-1">
+                    <h5 class="text-uppercase mt-5">Tags</h5>
+                    <ul class="list-unstyled p-0 text-uppercase">
+                        <li class="d-inline-block"><a href="#">Css</a></li>
+                        <li class="d-inline-block"><a href="#">JavaScript</a></li>
+                        <li class="d-inline-block"><a href="#">Jquery</a></li>
+                        <li class="d-inline-block"><a href="#">Html5</a></li>
+                        <li class="d-inline-block"><a href="#">Bootstrap</a></li>
+                        <li class="d-inline-block"><a href="#">Css</a></li>
+                        <li class="d-inline-block"><a href="#">JavaScript</a></li>
+                        <li class="d-inline-block"><a href="#">Jquery</a></li>
+                    </ul>
+                    <h5 class="text-uppercase mt-5">Archives</h5>
+                    <ul class="p-0 list-unstyled">
+                        <li class="d-flex justify-content-between border-bottom"><a href="#">Business</a><span>15</span>
+                        </li>
+                        <li class="d-flex justify-content-between border-bottom"><a
+                                href="#">Photography</a><span>17</span></li>
+                        <li class="d-flex justify-content-between border-bottom"><a href="#">Journal</a><span>22</span>
+                        </li>
+                        <li class="d-flex justify-content-between border-bottom"><a href="#">Web
+                            devlopment</a><span>30</span></li>
+                    </ul>
+                </div>
+                <div class="col-md-8 col-sm-6">
+                    <div class="blog_post">
+                        <div class="post_media">
+                            <img class="img-fluid w-100" src="img/blog1.jpg" alt="post image">
+                        </div>
+                        <div class="post_info">
+                            <div class="post_date text-uppercase">october 13, 2015</div>
+                            <i class="ion ion-md-chatboxes"></i>
+                            <span>8</span>
+                            <i class="ion ion-md-heart"></i>
+                            <span>15</span>
+                        </div>
+                        <p class="m-0">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                        <div class="collapse" id="collapseExample">
+                            Adipisci architecto, atque distinctio dolore dolorem eius eos excepturi exercitationem
+                            explicabo fugiat id illo incidunt molestias officia officiis placeat, quas, quis quo quod
+                            repellendus unde voluptatem voluptatum? Accusantium consectetur dolore, eaque enim est
+                            eveniet hic mollitia neque, officia officiis perferendis, qui sed voluptatibus? Cumque,
+                            iste.
+                        </div>
+                        <a class="btn btn-primary text-uppercase" data-toggle="collapse" href="#collapseExample"
+                           role="button" aria-expanded="false" aria-controls="collapseExample">
+                            continue reading <i class="ion ion-md-arrow-forward"></i>
+                        </a>
+
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -162,20 +319,21 @@
         <div class="container">
             <div class="row py-5">
                 <div class="col-lg-6">
-                    <h2 class="text-uppercase">YOU THINK WE'RE COOL ? LET'S WORK TOGETHER</h2>
-                    <a href="#" class="btn btn-secondary">get in touch</a>
+                    <h2 class="text-uppercase text--white">YOU THINK WE'RE COOL ? LET'S WORK TOGETHER</h2>
+                    <a href="#" class="btn btn-secondary btn--white text-uppercase my-3">get in touch</a>
                 </div>
                 <div class="col-lg-6">
                     <form action="" style="background-color:#fff; padding: 20px 25px">
-                        <h3 class="text-uppercase">STAY INFORMED WITH OUR NEWSLETTER</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur blanditiis cumque
-                            dignissimos illum voluptas! Aliquam, architecto commodi distinctio explicabo facilis illo,
-                            illum mollitia nostrum officiis placeat quisquam sequi sint voluptatem!</p>
+                        <h3 class="text-uppercase text__informed">STAY INFORMED WITH OUR NEWSLETTER</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="your email"
+                            <input type="text" class="form-control text-uppercase input__style" placeholder="your email"
                                    aria-label="your email" aria-describedby="email">
                             <div class="input-group-append">
-                                <button class="btn btn-primary" type="button" id="email">Send</button>
+                                <button class="btn btn-primary btn--green btn--green--size text-uppercase" type="button"
+                                        id="email">Send
+                                </button>
                             </div>
                         </div>
                     </form>
@@ -186,7 +344,7 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-8 col-md-6">
                     <ul class="list-unstyled text-uppercase">
                         <li class="list-inline-item"><a class="dashed" href="index.html">Home</a></li>
                         <li class="list-inline-item"><a class="dashed" href="about.html">About us</a></li>
@@ -196,14 +354,15 @@
                         <li class="list-inline-item"><a class="dashed" href="contact.html">Contact us</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4 text-right">
-                    <div class="text-uppercase">Created by akhouad 2016. All Rights Reserved</div>
-                    <ul class="list-unstyled">
-                        <li class="list-inline-item"><a href="#"><i class="icon ion-logo-facebook"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="icon ion-logo-twitter"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="icon ion-logo-youtube"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="icon ion-logo-linkedin"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="icon ion-logo-pinterest"></i></a></li>
+                <div class="col-lg-4 col-md-6 text-right">
+                    <div class="text-uppercase" style="font-size: 14px;">Created by akhouad 2016. All Rights Reserved
+                    </div>
+                    <ul class="list-unstyled" style="margin: 30px 0 50px">
+                        <li class="list-inline-item mr-3"><a href="#"><i class="icon ion-logo-facebook"></i></a></li>
+                        <li class="list-inline-item mr-3"><a href="#"><i class="icon ion-logo-twitter"></i></a></li>
+                        <li class="list-inline-item mr-3"><a href="#"><i class="icon ion-logo-youtube"></i></a></li>
+                        <li class="list-inline-item mr-3"><a href="#"><i class="icon ion-logo-linkedin"></i></a></li>
+                        <li class="list-inline-item mr-3"><a href="#"><i class="icon ion-logo-pinterest"></i></a></li>
                         <li class="list-inline-item"><a href="#"><i class="icon ion-logo-instagram"></i></a></li>
                     </ul>
                 </div>

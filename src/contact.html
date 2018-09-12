@@ -5,14 +5,15 @@
 <body>
 //= _header.html
 
-<div class="site--bg">
-    <div class="row text-uppercase h-100 align-items-center align-content-center">
-        <div class="col-12 text-center">Contact us</div>
-        <div class="col-12 text-center">home / about</div>
-    </div>
-</div>
-
-<main>
+<main class="contact">
+    <section class="site--bg">
+        <div class="container">
+            <div class="row justify-content-center text-uppercase align-items-center align-content-center site__title">
+                <div class="col-12 text-center title">Contact us</div>
+                <div class="col-12 text-center subtitle">home / about</div>
+            </div>
+        </div>
+    </section>
     <section class="section my-7">
         <div class="container">
             <div class="row">
@@ -20,48 +21,54 @@
                     <form class="mb-6">
                         <div class="row mb-3">
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="Your name">
+                                <input type="text" class="form-control input__style input__style--pad"
+                                       placeholder="Your name">
                             </div>
                             <div class="col">
-                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                <input type="email" class="form-control input__style input__style--pad"
+                                       id="exampleFormControlInput1"
                                        placeholder="Your email">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="Object">
+                                <input type="text" class="form-control input__style input__style--pad"
+                                       placeholder="Object">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <div class="col">
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
-                                          placeholder="Message"></textarea>
+                                <textarea class="form-control input__style input__style--pad"
+                                          id="exampleFormControlTextarea1" rows="5" cols="20" placeholder="Message"
+                                          style=" resize: none;"></textarea>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send</button>
+                        <button type="submit" class="btn btn-primary text-uppercase btn--green btn--green--size">Send
+                        </button>
                     </form>
                     <div class="row">
                         <div class="col col-sm-12">
-                            <h3 class="text-uppercase">Contact info</h3>
+                            <h3 class="text-uppercase text__sub">Contact info</h3>
                             <p>Lorem ipsum dolor sit amet, conse adipisicing elit. Libero incidunt quod ab mollitia quia
                                 dolorum conse.</p>
                         </div>
                         <div class="row ">
                             <div class="col-lg-6 ml-3 mb-2">
                                 <span class="d-block">13D, Functional apartment, Unique colony, Agadir 86360 </span>
-                                <span class="d-block">+212 124-566-780</span>
-                                <span class="d-block">+212 124-566-780</span>
+                                <span class="d-block my-2">+212 124-566-780</span>
+                                <span class="d-block mb-2">+212 124-566-780</span>
                                 <span class="d-block font-weight-bold">email@website.com</span>
-                                <ul class="list-unstyled">
-                                    <li class="list-inline-item"><a href="#"><i class="icon ion-logo-facebook"></i></a>
+                                <ul class="list-unstyled" style="margin: 30px 0; font-size:18px;">
+                                    <li class="list-inline-item mr-2"><a href="#"><i class="icon ion-logo-facebook"></i></a>
                                     </li>
-                                    <li class="list-inline-item"><a href="#"><i class="icon ion-logo-twitter"></i></a>
+                                    <li class="list-inline-item mr-2"><a href="#"><i class="icon ion-logo-twitter"></i></a>
                                     </li>
-                                    <li class="list-inline-item"><a href="#"><i class="icon ion-logo-youtube"></i></a>
+                                    <li class="list-inline-item mr-2"><a href="#"><i class="icon ion-logo-youtube"></i></a>
                                     </li>
-                                    <li class="list-inline-item"><a href="#"><i class="icon ion-logo-linkedin"></i></a>
+                                    <li class="list-inline-item mr-2"><a href="#"><i class="icon ion-logo-linkedin"></i></a>
                                     </li>
-                                    <li class="list-inline-item"><a href="#"><i class="icon ion-logo-pinterest"></i></a>
+                                    <li class="list-inline-item mr-2"><a href="#"><i
+                                            class="icon ion-logo-pinterest"></i></a>
                                     </li>
                                     <li class="list-inline-item"><a href="#"><i class="icon ion-logo-instagram"></i></a>
                                     </li>

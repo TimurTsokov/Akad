@@ -10,4 +10,5 @@
 /// = ./popover.js
 /// = ./modal.js
 //= ./isotope.pkgd.min.js
+/// = ./scroll.js
 //= ./scripts.js

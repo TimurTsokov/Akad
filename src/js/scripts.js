@@ -8,6 +8,17 @@ $(document).ready(function () {
             // gutter: 30
         }
     });
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > '400') {
+            $('.container-navbar').css({"background-color": "rgba(155, 152, 147, 0.5)"});
+            $('nav').css({"padding": "0"});
+        } else if ($(window).scrollTop() < '400') {
+            $('.container-navbar').css({"background-color": "transparent"});
+            $('nav').css({"padding": "1.5rem 0"});
+        }
+    });
+
     $('.navbar-nav a').on('click', function () {
         $('.navbar-nav li').removeClass('active');
         $(this).parent().addClass('active');
@@ -26,6 +37,11 @@ $(document).ready(function () {
         $('.pricing_plan').removeClass('pricing_plan-active');
         $(this).addClass('pricing_plan-active');
     });
+
+    $('a[href="#"]').on('click', function (e) {
+        e.preventDefault()
+    });
+
     $('.carousel').carousel();
 });
 
