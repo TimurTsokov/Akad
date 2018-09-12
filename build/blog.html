@@ -48,7 +48,7 @@
     </nav>
 </div>
 
-<main>
+<main class="blog">
     <section class="site--bg">
         <div class="container">
             <div class="row justify-content-center text-uppercase align-items-center align-content-center site__title">
@@ -60,8 +60,7 @@
     <section class="my-7">
         <div class="container">
             <div class="row">
-
-                <div class="col-md-8 col-sm-6">
+                <div class="col-md-8 col-sm-6 pl-0">
                     <div class="blog_post">
                         <div class="post_media">
                             <img class="img-fluid w-100" src="img/blog1.jpg" alt="post image">
@@ -70,23 +69,25 @@
                             <div class="post_date text-uppercase">october 13, 2015</div>
                             <i class="ion ion-md-chatboxes"></i>
                             <span>8</span>
-                            <i class="ion ion-md-heart"></i>
+                            <i class="ion ion-md-heart ml-2"></i>
                             <span>15</span>
                         </div>
-                        <p class="m-0">
+                        <h4 class="text-uppercase text__sub">THE BIG LEAGUES OUR TURN STRAIGHTNIN</h4>
+                        <p class="mb-2">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
                             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                             voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                         </p>
-                        <div class="collapse" id="collapseExample">
+                        <div class="collapse mb-2" id="collapseExample">
                             Adipisci architecto, atque distinctio dolore dolorem eius eos excepturi exercitationem
                             explicabo fugiat id illo incidunt molestias officia officiis placeat, quas, quis quo quod
                             repellendus unde voluptatem voluptatum? Accusantium consectetur dolore, eaque enim est
                             eveniet hic mollitia neque, officia officiis perferendis, qui sed voluptatibus? Cumque,
                             iste.
                         </div>
-                        <a class="btn btn-primary text-uppercase" data-toggle="collapse" href="#collapseExample"
+                        <a class="btn btn-primary text-uppercase btn-collapse" data-toggle="collapse"
+                           href="#collapseExample"
                            role="button" aria-expanded="false" aria-controls="collapseExample">
                             continue reading <i class="ion ion-md-arrow-forward"></i>
                         </a>
@@ -94,46 +95,51 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 offset-lg-1">
-                    <div class="input-group">
-                        <input class="text-uppercase" type="search" aria-describedby="search" placeholder="search...">
-                        <div class="input-group-append">
-                            <button class="btn" type="button" id="search"><i class="ion ion-md-search"></i></button>
+                <div class="col-md-3 col-sm-4 offset-lg-1 offset-md-0 p-0 px-sm-3">
+                    <div class="input-group flex-nowrap">
+                        <input class="text-uppercase search" type="search" aria-describedby="search"
+                               placeholder="search...">
+                        <div class="input-group-append d-inline-block">
+                            <button class="btn search" type="button" id="search"><i class="ion ion-md-search"></i>
+                            </button>
                         </div>
                     </div>
-                    <h5 class="text-uppercase mt-5">Posts</h5>
+                    <h5 class="text-uppercase mt-5 text__blog">Posts</h5>
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                            <a class="nav-link active text__blog text__blog--size" id="home-tab" data-toggle="tab"
+                               href="#home" role="tab"
                                aria-controls="home" aria-selected="true">Latest</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                            <a class="nav-link text__blog text__blog--size" id="profile-tab" data-toggle="tab"
+                               href="#profile" role="tab"
                                aria-controls="profile" aria-selected="false">Popular</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                            <a class="nav-link text__blog text__blog--size" id="contact-tab" data-toggle="tab"
+                               href="#contact" role="tab"
                                aria-controls="contact" aria-selected="false">Comments</a>
                         </li>
                     </ul>
-                    <div class="tab-content" id="myTabContent">
+                    <div class="tab-content mt-4" id="myTabContent">
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                            <div class="row">
+                            <div class="row mb-2">
                                 <div class="col-lg-1">
                                     <img class="img-fluid" src="img/blog2.jpg" alt="">
                                 </div>
                                 <div class="col-lg-7 offset-lg-3">
-                                    <div class="text-uppercase">Magna mollis ultricies</div>
-                                    <div>3th oct 2012</div>
+                                    <div class="text-uppercase text__blog">Magna mollis ultricies</div>
+                                    <div style="font-size: 12px;">3th oct 2012</div>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row mb-2">
                                 <div class="col-lg-1">
                                     <img class="img-fluid" src="img/blog3.jpg" alt="">
                                 </div>
                                 <div class="col-lg-7 offset-lg-3">
-                                    <div class="text-uppercase">Magna mollis ultricies</div>
-                                    <div>3th oct 2012</div>
+                                    <div class="text-uppercase text__blog">Magna mollis ultricies</div>
+                                    <div style="font-size: 12px;">3th oct 2012</div>
                                 </div>
                             </div>
                             <div class="row">
@@ -141,28 +147,28 @@
                                     <img class="img-fluid" src="img/blog4.jpg" alt="">
                                 </div>
                                 <div class="col-lg-7 offset-lg-3">
-                                    <div class="text-uppercase">Magna mollis ultricies</div>
-                                    <div>3th oct 2012</div>
+                                    <div class="text-uppercase text__blog">Magna mollis ultricies</div>
+                                    <div style="font-size: 12px;">3th oct 2012</div>
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                            <div class="row">
+                            <div class="row mb-2">
                                 <div class="col-lg-1">
                                     <img class="img-fluid" src="img/blog3.jpg" alt="">
                                 </div>
                                 <div class="col-lg-7 offset-lg-3">
-                                    <div class="text-uppercase">Magna mollis ultricies</div>
-                                    <div>3th oct 2012</div>
+                                    <div class="text-uppercase text__blog">Magna mollis ultricies</div>
+                                    <div style="font-size: 12px;">3th oct 2012</div>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row mb-2">
                                 <div class="col-lg-1">
                                     <img class="img-fluid" src="img/blog2.jpg" alt="">
                                 </div>
                                 <div class="col-lg-7 offset-lg-3">
-                                    <div class="text-uppercase">Magna mollis ultricies</div>
-                                    <div>3th oct 2012</div>
+                                    <div class="text-uppercase text__blog">Magna mollis ultricies</div>
+                                    <div style="font-size: 12px;">3th oct 2012</div>
                                 </div>
                             </div>
                             <div class="row">
@@ -170,28 +176,28 @@
                                     <img class="img-fluid" src="img/blog4.jpg" alt="">
                                 </div>
                                 <div class="col-lg-7 offset-lg-3">
-                                    <div class="text-uppercase">Magna mollis ultricies</div>
-                                    <div>3th oct 2012</div>
+                                    <div class="text-uppercase text__blog">Magna mollis ultricies</div>
+                                    <div style="font-size: 12px;">3th oct 2012</div>
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                            <div class="row">
+                            <div class="row mb-2">
                                 <div class="col-lg-1">
                                     <img class="img-fluid" src="img/blog2.jpg" alt="">
                                 </div>
                                 <div class="col-lg-7 offset-lg-3">
-                                    <div class="text-uppercase">Magna mollis ultricies</div>
-                                    <div>3th oct 2012</div>
+                                    <div class="text-uppercase text__blog">Magna mollis ultricies</div>
+                                    <div style="font-size: 12px;">3th oct 2012</div>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row mb-2">
                                 <div class="col-lg-1">
                                     <img class="img-fluid" src="img/blog4.jpg" alt="">
                                 </div>
                                 <div class="col-lg-7 offset-lg-3">
-                                    <div class="text-uppercase">Magna mollis ultricies</div>
-                                    <div>3th oct 2012</div>
+                                    <div class="text-uppercase text__blog">Magna mollis ultricies</div>
+                                    <div style="font-size: 12px;">3th oct 2012</div>
                                 </div>
                             </div>
                             <div class="row">
@@ -199,27 +205,29 @@
                                     <img class="img-fluid" src="img/blog3.jpg" alt="">
                                 </div>
                                 <div class="col-lg-7 offset-lg-3">
-                                    <div class="text-uppercase">Magna mollis ultricies</div>
-                                    <div>3th oct 2012</div>
+                                    <div class="text-uppercase text__blog">Magna mollis ultricies</div>
+                                    <div style="font-size: 12px;">3th oct 2012</div>
                                 </div>
                             </div>
 
                         </div>
                     </div>
-                    <h5 class="text-uppercase mt-5">Categories</h5>
+                    <h5 class="text-uppercase mt-5 text__blog">Categories</h5>
                     <ul class="p-0 list-unstyled">
-                        <li class="d-flex justify-content-between border-bottom"><a href="#">Business</a><span>15</span>
+                        <li class="d-flex justify-content-between align-items-center border-bottom"><a href="#"
+                                                                                                       class="link">Business</a><span>15</span>
                         </li>
-                        <li class="d-flex justify-content-between border-bottom"><a
-                                href="#">Photography</a><span>17</span></li>
-                        <li class="d-flex justify-content-between border-bottom"><a href="#">Journal</a><span>22</span>
+                        <li class="d-flex justify-content-between align-items-center border-bottom"><a
+                                href="#" class="link">Photography</a><span>17</span></li>
+                        <li class="d-flex justify-content-between align-items-center border-bottom"><a href="#"
+                                                                                                       class="link">Journal</a><span>22</span>
                         </li>
-                        <li class="d-flex justify-content-between border-bottom"><a href="#">Web
+                        <li class="d-flex justify-content-between align-items-center border-bottom"><a href="#"
+                                                                                                       class="link">Web
                             devlopment</a><span>30</span></li>
                     </ul>
-
                 </div>
-                <div class="col-md-8 col-sm-6 my-6">
+                <div class="col-md-8 col-sm-6 my-6 pl-0">
                     <div class="blog_post">
                         <div class="post_media">
                             <img class="img-fluid w-100" src="img/blog1.jpg" alt="post image">
@@ -228,54 +236,67 @@
                             <div class="post_date text-uppercase">october 13, 2015</div>
                             <i class="ion ion-md-chatboxes"></i>
                             <span>8</span>
-                            <i class="ion ion-md-heart"></i>
+                            <i class="ion ion-md-heart ml-2"></i>
                             <span>15</span>
                         </div>
-                        <p class="m-0">
+                        <h4 class="text-uppercase text__sub">THE BIG LEAGUES OUR TURN STRAIGHTNIN</h4>
+                        <p class="mb-2">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
                             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                             voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                         </p>
-                        <div class="collapse" id="collapseExample">
+                        <div class="collapse mb-2" id="collapseExample">
                             Adipisci architecto, atque distinctio dolore dolorem eius eos excepturi exercitationem
                             explicabo fugiat id illo incidunt molestias officia officiis placeat, quas, quis quo quod
                             repellendus unde voluptatem voluptatum? Accusantium consectetur dolore, eaque enim est
                             eveniet hic mollitia neque, officia officiis perferendis, qui sed voluptatibus? Cumque,
                             iste.
                         </div>
-                        <a class="btn btn-primary text-uppercase" data-toggle="collapse" href="#collapseExample"
+                        <a class="btn btn-primary text-uppercase btn-collapse" data-toggle="collapse"
+                           href="#collapseExample"
                            role="button" aria-expanded="false" aria-controls="collapseExample">
                             continue reading <i class="ion ion-md-arrow-forward"></i>
                         </a>
 
                     </div>
                 </div>
-                <div class="col-md-3 offset-lg-1">
-                    <h5 class="text-uppercase mt-5">Tags</h5>
+                <div class="col-md-3 col-sm-4 offset-lg-1 p-0 px-sm-3">
+                    <h5 class="text-uppercase mt-5 text__blog">Tags</h5>
                     <ul class="list-unstyled p-0 text-uppercase">
-                        <li class="d-inline-block"><a href="#">Css</a></li>
-                        <li class="d-inline-block"><a href="#">JavaScript</a></li>
-                        <li class="d-inline-block"><a href="#">Jquery</a></li>
-                        <li class="d-inline-block"><a href="#">Html5</a></li>
-                        <li class="d-inline-block"><a href="#">Bootstrap</a></li>
-                        <li class="d-inline-block"><a href="#">Css</a></li>
-                        <li class="d-inline-block"><a href="#">JavaScript</a></li>
-                        <li class="d-inline-block"><a href="#">Jquery</a></li>
+                        <li class="d-inline-block list__tags"><a class="text__blog text__blog--size" href="#">Css</a>
+                        </li>
+                        <li class="d-inline-block list__tags"><a class="text__blog text__blog--size"
+                                                                 href="#">JavaScript</a></li>
+                        <li class="d-inline-block list__tags"><a class="text__blog text__blog--size" href="#">Jquery</a>
+                        </li>
+                        <li class="d-inline-block list__tags"><a class="text__blog text__blog--size" href="#">Html5</a>
+                        </li>
+                        <li class="d-inline-block list__tags"><a class="text__blog text__blog--size"
+                                                                 href="#">Bootstrap</a></li>
+                        <li class="d-inline-block list__tags"><a class="text__blog text__blog--size" href="#">Css</a>
+                        </li>
+                        <li class="d-inline-block list__tags"><a class="text__blog text__blog--size"
+                                                                 href="#">JavaScript</a></li>
+                        <li class="d-inline-block list__tags"><a class="text__blog text__blog--size" href="#">Jquery</a>
+                        </li>
                     </ul>
-                    <h5 class="text-uppercase mt-5">Archives</h5>
+                    <h5 class="text-uppercase mt-5 text__blog">Archives</h5>
                     <ul class="p-0 list-unstyled">
-                        <li class="d-flex justify-content-between border-bottom"><a href="#">Business</a><span>15</span>
+                        <li class="d-flex justify-content-between align-items-center border-bottom"><a href="#"
+                                                                                                       class="link">Business</a><span>15</span>
                         </li>
-                        <li class="d-flex justify-content-between border-bottom"><a
-                                href="#">Photography</a><span>17</span></li>
-                        <li class="d-flex justify-content-between border-bottom"><a href="#">Journal</a><span>22</span>
+                        <li class="d-flex justify-content-between align-items-center border-bottom"><a
+                                href="#" class="link">Photography</a><span>17</span></li>
+                        <li class="d-flex justify-content-between align-items-center border-bottom"><a href="#"
+                                                                                                       class="link">Journal</a><span>22</span>
                         </li>
-                        <li class="d-flex justify-content-between border-bottom"><a href="#">Web
+                        <li class="d-flex justify-content-between align-items-center border-bottom"><a href="#"
+                                                                                                       class="link">Web
                             devlopment</a><span>30</span></li>
                     </ul>
                 </div>
-                <div class="col-md-8 col-sm-6">
+                <div class="col-md-8 col-sm-6 pl-0">
                     <div class="blog_post">
                         <div class="post_media">
                             <img class="img-fluid w-100" src="img/blog1.jpg" alt="post image">
@@ -284,23 +305,25 @@
                             <div class="post_date text-uppercase">october 13, 2015</div>
                             <i class="ion ion-md-chatboxes"></i>
                             <span>8</span>
-                            <i class="ion ion-md-heart"></i>
+                            <i class="ion ion-md-heart ml-2"></i>
                             <span>15</span>
                         </div>
-                        <p class="m-0">
+                        <h4 class="text-uppercase text__sub">THE BIG LEAGUES OUR TURN STRAIGHTNIN</h4>
+                        <p class="mb-2">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
                             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                             voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                         </p>
-                        <div class="collapse" id="collapseExample">
+                        <div class="collapse mb-2" id="collapseExample">
                             Adipisci architecto, atque distinctio dolore dolorem eius eos excepturi exercitationem
                             explicabo fugiat id illo incidunt molestias officia officiis placeat, quas, quis quo quod
                             repellendus unde voluptatem voluptatum? Accusantium consectetur dolore, eaque enim est
                             eveniet hic mollitia neque, officia officiis perferendis, qui sed voluptatibus? Cumque,
                             iste.
                         </div>
-                        <a class="btn btn-primary text-uppercase" data-toggle="collapse" href="#collapseExample"
+                        <a class="btn btn-primary text-uppercase btn-collapse" data-toggle="collapse"
+                           href="#collapseExample"
                            role="button" aria-expanded="false" aria-controls="collapseExample">
                             continue reading <i class="ion ion-md-arrow-forward"></i>
                         </a>

@@ -37,7 +37,8 @@
   }
 
   .nav-link {
-    border: $nav-tabs-border-width solid transparent;
+    //border: $nav-tabs-border-width solid transparent;
+    border-bottom: 2px solid #e6e6e6;
     @include border-top-radius($nav-tabs-border-radius);
 
     @include hover-focus {
@@ -55,7 +56,8 @@
   .nav-item.show .nav-link {
     color: $nav-tabs-link-active-color;
     background-color: $nav-tabs-link-active-bg;
-    border-color: $nav-tabs-link-active-border-color;
+    //border-color: $nav-tabs-link-active-border-color;
+    border-color: #7beec7;
   }
 
   .dropdown-menu {

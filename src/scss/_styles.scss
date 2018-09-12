@@ -18,7 +18,7 @@ body {
   color: $text-color;
 }
 
-.about, .services, .contact {
+.about, .services, .contact, .blog {
   font-size: 14px;
 }
 
@@ -350,7 +350,7 @@ body {
   }
 }
 
-.author__name {
+.author__name, .post_date {
   display: inline-block;
   background-color: $btn-green;
   text-transform: uppercase;
@@ -366,12 +366,16 @@ body {
 }
 
 .post_info {
-  padding: 30px 0 20px;
+  span {
+    font-family: $monts;
+    font-weight: 400;
+    color: #cccccc;
+  }
 }
 
 .post_date {
   display: inline-block;
-  margin-right: 15px;
+  margin: 30px 15px 20px 0;
 }
 
 .post_media {
@@ -379,10 +383,82 @@ body {
   height: auto
 }
 
-//.navbar{
-//  top: 0;
-//}
-//.navbar-toggler{
-//  position: absolute;
-//  left: 800%;
-//}
+.ion-md-chatboxes, .ion-md-heart {
+  font-size: 18px;
+}
+
+.ion-md-heart {
+  color: #ea6a6a;
+}
+
+.btn-collapse {
+  font-family: $monts;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+  color: $text-color;
+  padding: 0;
+  &:hover,
+  &:focus,
+  &:active {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: $btn-green;
+    box-shadow: none;
+  }
+}
+
+.search {
+  border: none;
+  font-family: $monts;
+  font-weight: 700;
+  font-size: 12px;
+  background-color: #ececec;
+  padding: 15px;
+  outline: none;
+  border-radius: 0;
+  &:active {
+    outline: none;
+  }
+}
+
+.ion-md-search {
+  font-size: 18px;
+  color: $text-color;
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+}
+
+.text__blog {
+  font-family: $monts;
+  font-weight: 700;
+  &--size {
+    font-size: 12px !important;
+  }
+}
+
+.link {
+  text-decoration: none !important;
+  padding: 15px;
+  &:hover,
+  &:focus {
+    color: $text-color;
+  }
+}
+
+.list__tags {
+  background-color: #e5e5e5;
+  margin-bottom: 5px;
+  a {
+    text-decoration: none !important;
+    margin: 10px 15px;
+    &:hover,
+    &:focus {
+      color: inherit;
+    }
+  }
+}
